@@ -1,0 +1,104 @@
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin:0
+        }
+        h2{
+            text-align:center;
+            margin-top:20px;
+        }
+        .calc{
+            margin:auto;
+            max-width:323px;
+            text-align:center;
+            margin-top:10px;
+            box-shadow:0 5px 10px 3px rgb(218, 125, 179);
+            transition:0.5s;
+            font-size:0;
+            background-color:rgb(89, 77, 95);
+        }
+        .calc:hover{
+            box-shadow:0 10px 20px 3px rgb(218, 125, 179);
+        }
+        .calc-head #display{
+            width:323px;
+            height:80px;
+            outline: none;
+            text-align:right;
+            font-size:40px;
+            font-weight:bold;
+            padding:0 10px;
+            letter-spacing:3px;
+        }
+        .calc-head #display{
+            background-color:rgb(226, 203, 223);
+        }
+        .calc-body input[type=button]{
+            width:60px;
+            height:60px;
+            color:white;
+            font-size:16px;
+            font-weight: bold;
+            background-color: #36263a;
+            border-radius:40px;
+            margin:7px;
+        }
+        .calc-body input[type=button]:hover,.calc-body div:last-child input:last-child:hover{
+            background-color:#816981;
+        }
+        .calc-body div input:nth-child(4){
+            background-color:palevioletred;
+        }
+        .calc-body div:last-child input:last-child{
+            background-color:orangered;
+        }
+        .calc-body input[type=button]:active{
+            background-color:#2f4250;
+        }
+    </style>
+</head>
+<body>
+    <h2>Calculator Project</h2>
+    <div class="calc">
+        <div class="calc-head">
+            <input type="text" id="display">
+        </div>
+        <div class="calc-body">
+            <div>
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="/">
+            </div>
+
+            <div>
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="x">
+            </div>
+
+            <div>
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="+">
+            </div>
+
+            <div>
+                <input type="button" value="0">
+                <input type="button" value=".">
+                <input type="button" value="DEL">
+                <input type="button" value="-">
+            </div>
+
+            <div>
+                <input type="button" value="AC">
+                <input type="button" value="root">
+                <input type="button" value="Sq">
+                <input type="button" value="=">
+            </div>
+        </div>
+    </div>
+</body>
